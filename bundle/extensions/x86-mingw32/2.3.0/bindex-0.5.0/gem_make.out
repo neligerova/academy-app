@@ -1,0 +1,28 @@
+current directory: c:/Users/Neli/Ruby on Rails/Ruby_apps/academy-app/bundle/gems/bindex-0.5.0/ext/bindex
+c:/Ruby23/bin/ruby.exe -r ./siteconf20171130-972-1cwz3vn.rb extconf.rb
+creating Makefile
+
+current directory: c:/Users/Neli/Ruby on Rails/Ruby_apps/academy-app/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: c:/Users/Neli/Ruby on Rails/Ruby_apps/academy-app/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+generating cruby-i386-mingw32.def
+compiling cruby.c
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/defines.h:168:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:36,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from cruby.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: its scope is only this definition or declaration, which is probably not what you want
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:296:43: warning: 'struct timespec' declared inside parameter list
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:1992:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from cruby.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:923:29: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:926:41: warning: 'struct timespec' declared inside parameter list
+linking shared-object bindex/cruby.so
+
+current directory: c:/Users/Neli/Ruby on Rails/Ruby_apps/academy-app/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20171130-972-so8afq/bindex

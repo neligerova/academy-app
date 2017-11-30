@@ -1,0 +1,135 @@
+have_header: checking for unistd.h... -------------------- yes
+
+"gcc -o conftest.exe -Ic:/Ruby23/include/ruby-2.3.0/i386-mingw32 -Ic:/Ruby23/include/ruby-2.3.0/ruby/backward -Ic:/Ruby23/include/ruby-2.3.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat conftest.c  -L. -Lc:/Ruby23/lib -L.      -lmsvcrt-ruby230  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/defines.h:168:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:36,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from conftest.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: its scope is only this definition or declaration, which is probably not what you want
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:296:43: warning: 'struct timespec' declared inside parameter list
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:1992:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from conftest.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:923:29: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:926:41: warning: 'struct timespec' declared inside parameter list
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"gcc -E -Ic:/Ruby23/include/ruby-2.3.0/i386-mingw32 -Ic:/Ruby23/include/ruby-2.3.0/ruby/backward -Ic:/Ruby23/include/ruby-2.3.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <unistd.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/select.h... -------------------- no
+
+"gcc -E -Ic:/Ruby23/include/ruby-2.3.0/i386-mingw32 -Ic:/Ruby23/include/ruby-2.3.0/ruby/backward -Ic:/Ruby23/include/ruby-2.3.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:24: fatal error: sys/select.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/select.h>
+/* end */
+
+--------------------
+
+have_header: checking for poll.h... -------------------- no
+
+"gcc -E -Ic:/Ruby23/include/ruby-2.3.0/i386-mingw32 -Ic:/Ruby23/include/ruby-2.3.0/ruby/backward -Ic:/Ruby23/include/ruby-2.3.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:18: fatal error: poll.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <poll.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/epoll.h... -------------------- no
+
+"gcc -E -Ic:/Ruby23/include/ruby-2.3.0/i386-mingw32 -Ic:/Ruby23/include/ruby-2.3.0/ruby/backward -Ic:/Ruby23/include/ruby-2.3.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:23: fatal error: sys/epoll.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/epoll.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/event.h... -------------------- no
+
+"gcc -E -Ic:/Ruby23/include/ruby-2.3.0/i386-mingw32 -Ic:/Ruby23/include/ruby-2.3.0/ruby/backward -Ic:/Ruby23/include/ruby-2.3.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:23: fatal error: sys/event.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/event.h>
+/* end */
+
+--------------------
+
+have_header: checking for port.h... -------------------- no
+
+"gcc -E -Ic:/Ruby23/include/ruby-2.3.0/i386-mingw32 -Ic:/Ruby23/include/ruby-2.3.0/ruby/backward -Ic:/Ruby23/include/ruby-2.3.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:18: fatal error: port.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <port.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/resource.h... -------------------- no
+
+"gcc -E -Ic:/Ruby23/include/ruby-2.3.0/i386-mingw32 -Ic:/Ruby23/include/ruby-2.3.0/ruby/backward -Ic:/Ruby23/include/ruby-2.3.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:26: fatal error: sys/resource.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/resource.h>
+/* end */
+
+--------------------
+

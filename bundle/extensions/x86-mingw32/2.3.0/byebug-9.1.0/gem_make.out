@@ -1,0 +1,90 @@
+current directory: c:/Users/Neli/Ruby on Rails/Ruby_apps/academy-app/bundle/gems/byebug-9.1.0/ext/byebug
+c:/Ruby23/bin/ruby.exe -r ./siteconf20171130-972-sdf3v.rb extconf.rb
+creating Makefile
+
+current directory: c:/Users/Neli/Ruby on Rails/Ruby_apps/academy-app/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: c:/Users/Neli/Ruby on Rails/Ruby_apps/academy-app/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR="
+generating byebug-i386-mingw32.def
+compiling breakpoint.c
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/defines.h:168:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:36,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from breakpoint.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: its scope is only this definition or declaration, which is probably not what you want
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:296:43: warning: 'struct timespec' declared inside parameter list
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:1992:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from breakpoint.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:923:29: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:926:41: warning: 'struct timespec' declared inside parameter list
+compiling byebug.c
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/defines.h:168:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:36,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from byebug.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: its scope is only this definition or declaration, which is probably not what you want
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:296:43: warning: 'struct timespec' declared inside parameter list
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:1992:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from byebug.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:923:29: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:926:41: warning: 'struct timespec' declared inside parameter list
+compiling context.c
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/defines.h:168:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:36,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from context.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: its scope is only this definition or declaration, which is probably not what you want
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:296:43: warning: 'struct timespec' declared inside parameter list
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:1992:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from context.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:923:29: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:926:41: warning: 'struct timespec' declared inside parameter list
+compiling locker.c
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/defines.h:168:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:36,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from locker.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: its scope is only this definition or declaration, which is probably not what you want
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:296:43: warning: 'struct timespec' declared inside parameter list
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:1992:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from locker.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:923:29: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:926:41: warning: 'struct timespec' declared inside parameter list
+compiling threads.c
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/defines.h:168:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:36,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from threads.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:295:44: warning: its scope is only this definition or declaration, which is probably not what you want
+c:/Ruby23/include/ruby-2.3.0/ruby/win32.h:296:43: warning: 'struct timespec' declared inside parameter list
+In file included from c:/Ruby23/include/ruby-2.3.0/ruby/ruby.h:1992:0,
+                 from c:/Ruby23/include/ruby-2.3.0/ruby.h:33,
+                 from byebug.h:4,
+                 from threads.c:1:
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:923:29: warning: 'struct timespec' declared inside parameter list
+c:/Ruby23/include/ruby-2.3.0/ruby/intern.h:926:41: warning: 'struct timespec' declared inside parameter list
+linking shared-object byebug/byebug.so
+
+current directory: c:/Users/Neli/Ruby on Rails/Ruby_apps/academy-app/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20171130-972-1o7cch2/byebug
