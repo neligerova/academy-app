@@ -1,5 +1,31 @@
 require 'rails_helper'
 
 RSpec.describe Category, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:category) { Category.new(name: 'The Best Category') }
+
+  describe "::save" do
+    it 'should save the category if all params are correct' do
+      expect(category.save).to eq(true)
+      expect(category.errors.size).to eq(0)
+      expect(category.persisted?).to eq(true)
+    end
+
+    it 'should error if name is not provided' do
+      category.name = nil
+      expect(category.save).to eq(false)
+      expect(category.errors.first).to eq([:name, "can't be blank"])
+    end
+
+    it 'should error if the name longer than 30 characters' do
+      category.name = 'A'*31
+      expect(category.save).to eq(false)
+      expect(category.errors.first).to eq([:name, "is too long (maximum is 30 characters)"])
+    end
+
+    it 'should error if name is duplicated' do
+      Category.create!(name: category.name)
+      expect(category.save).to eq(false)
+      expect(category.errors.first).to eq([:name, "has already been taken"])
+    end
+  end
 end
